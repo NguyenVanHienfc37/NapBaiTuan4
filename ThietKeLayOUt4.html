@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: auto;
+        }
+        body {
+            background-image: url(./hinh-anh-lang-que-viet-nam-13.jpg);
+        }
+        .wrapper {
+            height: 700px;
+            width: 1098px;
+            background-color: antiquewhite;
+        }
+        nav {
+            height: 50px;
+            width: 100%;
+            background-color: aqua;
+            line-height: 50px;
+        }
+        header {
+            width: 1089px;
+            height: 150px;
+            background-image: url();
+        }
+        .content {
+            height: 300px;
+            width: 100%;
+            background-color: rgb(196,161,110);
+        }
+        aside {
+            height: 100%;
+            width: 40%;
+            background-color: blue;
+            float: left;
+        }
+        section {
+            height: 100%;
+            width: 60%;
+            background-color: rgb(207, 243, 219);
+            float: left;
+        }
+        .menu li {
+            height: 100%;
+            width: 130px;
+            background-color: antiquewhite;
+            float: left;
+            line-height: 50px;
+            text-indent: 20px;
+            list-style: none;
+            position: relative;
+        }
+        a {
+
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .menu li:hover {
+            background-color: black;
+        }
+        li:hover>a {
+            color: white;
+            font-style: italic;
+        }
+        .menu li  .submenu {
+            display: none;
+            position: absolute;
+        }
+        .menu li:hover .submenu {
+            display: block;
+        }
+        nav span form #btnGo {
+            padding: 3px;
+            border-radius: 50%;
+        }
+        nav span form #txtEmail {
+            padding: 3px;
+            border-radius: 10%;
+        }
+        .wrapper header p {
+            font-size: 50px;
+            text-shadow: 10px 20px 20px red;
+            text-align: center;
+        }
+        .wrapper header:hover p {
+            transform: rotate(25deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">hello</a>
+                </li>
+                <ul class="submenu">
+                    <li>
+                        <a href="">phone</a>
+                    </li>
+                    <li>
+                        <a href="">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="">Hi</a>
+                    </li>
+                </ul>
+                <li><a href="">Help</a></li>
+                <li><a href="">Human</a></li>
+            </ul>
+            <span>
+                <form action="" method="post">
+                    <label for="Email">Email: </label>
+                    <input type="Enail" name="txtEmail" id="txtEmail" required placeholder="nhap email" minlength="20">
+                    <input type="submit" value="Go" id="btnGo">
+                </form>
+            </span>
+        </nav>
+        <header>
+            <p>Game show</p>
+        </header>
+        <div class="content">
+            <aside>
+                <article>
+                    <h2>Hoat Hinh Cuoi</h2>
+                    <img src="./HinhMatCuoi.jpg" alt="">
+                </article>
+                <article>
+                    <h2>Hoat Hinh</h2>
+                    <img src="./HinhSmile.png" alt="">
+                </article>
+                <article>
+                    <h2>Cuoi Khuc Khich</h2>
+                    <img src="./Capture.PNG" alt="">
+                </article>
+            </aside>
+            <section>
+                <h2>Dang Ki Danh Sach</h2>
+                <form action="dangky.php" method="post"></form>
+                <fieldset>
+                    <legend>Thong Tin Cua Ban</legend>
+                    <label for="lblHoTen">Ho Ten : </label>
+                    <input type="text" name="txtHT" id="txtHT" required placeholder="Nhap Ho Ten" minlength="20"> 
+                    <br>
+                    <br>
+                    <label for="lblGioiTinh">Gioi Tinh</label>
+                    <input type="radio" name="radNam" id="radnNam" value="anm">
+                    <Label>Nam</Label>
+                    <input type="radio" name="radNam" id="radNu" value="nu"> <label>Nu</label>
+                    <br>
+                    <br>
+                    <label for="NgaySinh">Ngay Sinh : </label>
+                    <input type="date" name="txtDate" id="txtDate" required placeholder="Ngay Sinh" minlength="20" pattern="dd/MM/yyyy">
+
+                </fieldset>
+            </section>
+        </div>
+        <footer></footer>
+    </div>
+</body>
+</html>
